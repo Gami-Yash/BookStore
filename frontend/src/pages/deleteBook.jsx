@@ -1,10 +1,17 @@
 import React from "react";
+import { useState } from "react";
+import Spinner from "../components/spinner";
+import BackButton from "../components/backButton";
+import axios from "axios";
 
-const deleteBook = () =>{
+
+
+
+const DeleteBook = () =>{
     return(
         <div>delete Book</div>
     )
 }
 
 
-export default deleteBook
+export default DeleteBook
