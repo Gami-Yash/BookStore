@@ -28,7 +28,6 @@ router.post('/', async (req, res) => {
 // To get all the books from the db
 router.get('/', async (req, res) => {
     try {
-        console.log('into get method')
         const books = await Book.find();
         return res.json({
             count: books.length,
