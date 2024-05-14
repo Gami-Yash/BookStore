@@ -24,14 +24,12 @@ const CreateBook = () => {
         axios
             .post("http://localhost:8080/book/", data)
             .then(() => {
-                setLoading(flase);
-                enqueueSnackbar('Book Created successfully', { variant: 'success' });
+                setLoading(false);
                 navigate('/');
             })
             .catch((err) => {
                 setLoading(false)
                 console.log(err)
-                enqueueSnackbar('Error', { variant: 'error' });
             })
 
 
